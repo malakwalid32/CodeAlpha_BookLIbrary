@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Edit Book Details">
+    <title>Edit Book Details</title>
+    <link rel="stylesheet" href="pages.css">
+    <style>
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 70vh;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="photos/headerphoto.jpg" align="middle" height="200" width="1500" />
+    </header>
+    <nav>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="profile.html">Profile</a></li>
+            <li><a href="available_books.html">Books</a></li>
+            <li><a href="contact_us.html">Contact Us</a></li>
+        </ul>
+    </nav>
+    <hr>
+    <div class="container">
+        <div id="bookDetailsForm">
+            <h1>Edit Book Details</h1>
+            <br>
+            <!--<form id="editBookForm" action="/edit_book_submit" method="post">-->
+                <form action="edit_details.html" method="post">
+                <label for="bookSelect">Select Book:</label>
+                <select id="bookSelect" name="bookId">
+                    
+                </select>
+                <br>
+                <div>
+                    <label for="title">Title: </label>
+                    <input class="input" type="text" id="title" name="title" placeholder="Enter the title" required>
+                </div>
+                <div>
+                    <label for="author">Author:</label>
+                    <input class="input" type="text" id="author" name="author" placeholder="Enter the author name" required >
+                </div>
+                <div>
+                    <label for="category">Category:</label>
+                    <input class="input" type="text" id="category" name="category" placeholder="Enter the category" required >
+                </div>
+                <div>
+                    <label for="number_of_pages">Number of pages:</label>
+                    <input class="input" type="text" id="number_of_pages" name="Number of pages" placeholder="Enter number of pages" required >
+                </div>
+                <br>
+                <div align="center">
+                    <button class="button" type="button" onclick="myFunction()">Save Changes</button>
+                </div>
+            </form>
+            
+        </div>
+    </div>
+    <div class="bottom-left">
+        <h5><i>~Explore endless worlds through the pages of our online library, where knowledge awaits at every turn.</i></h5>
+    </div>
+    <footer>
+        <h6>&copy; 2024 Online Library. All rights reserved.</h6>
+    </footer>
+    <script src="EditBookDetails.js"></script>
+</body>
+</html>
+
+
